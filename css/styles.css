@@ -1,0 +1,670 @@
+*{
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+:root{
+    --bg-color: #040f29;
+    --text-color: #fff;
+    --main-color: #4ABCE5;
+    --nav-color: #02091a;
+    --scroll-color: #141a29;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    background: var(--nav-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    margin: auto;
+    padding: 20px;
+}
+
+.home .nav_img{
+    margin: auto;
+}
+
+.hero{
+    margin: 120px auto;
+    height: 450px;
+    width: 900px;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: var(--main-color);
+}
+
+.hero-text{
+    padding-left: 20px;
+}
+
+.hero-text h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    vertical-align: middle;
+    color: var(--main-color);
+}
+
+.hero-text h6{
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: var(--text-color);
+}
+
+.hero .hero-img {
+    width: auto;
+    padding-right: 10px;
+    display: flex;
+}
+
+.hero .hero-img .hero_profile{
+    width: 290px;
+}
+
+.education{
+    margin: auto;
+    max-height: 100vh;
+    padding-bottom: 52px;
+    background-color: var(--bg-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.education h1{
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: 800;
+    border-bottom: 1px solid;
+    border-color: var(--main-color);
+}
+
+.edu_container{
+    padding-block: 1.5rem 3rem;
+    position: relative;
+}
+
+.edu_card{
+    width: 768.5px;
+    position: relative;
+    border: 1px solid;
+    display: grid;
+    overflow: hidden;
+    border-radius: 30px;
+    border-color: var(--main-color);
+    background-clip: content-box;
+}
+
+.edu_img{
+    vertical-align: middle;
+    height: 350px;
+    width: 769px;
+    object-fit: cover;
+}
+
+span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.edu_info{
+    padding: 1.5rem 1rem 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    border: transparent;
+}
+
+.projects{
+    position: relative;
+    max-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 2.5rem;
+    background-color: var(--bg-color);
+}
+
+.projects h1{
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: 800;
+    border-bottom: 1px solid;
+    border-color: var(--main-color);
+}
+
+.projects_wrapper{
+    position: relative;
+    border: 1px solid;
+    border-color: var(--main-color);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects_img1{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.projects_img2{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.projects_info{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.projects_info h1{
+    border: 1px solid transparent;
+    font-size: 2.25rem;
+    font-weight:700;
+}
+
+.projects_info p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.certi{
+    max-height:100vh;
+    margin: 100px auto;
+    margin-bottom: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.certi h1{
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main-color);
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: var(--main-color);
+}
+
+.certi_card{
+    margin: 30px;
+    padding-top: 20px;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.certi_img{
+    height: 250px;
+    padding: 30px;
+}
+
+.certi_card h6{
+    text-align: center;
+    margin: auto;
+    font-size: 1rem;
+    vertical-align: middle;
+    color: var(--text-color);
+}
+
+footer{
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: var(--nav-color);
+    text-align: center;
+}
+
+.footer_icons a{
+    padding: 2px;
+}
+
+.footer_icons p{
+    color: #4ABCE5;
+}
+
+::-webkit-scrollbar{
+    width: .6rem;
+    background-color: var(--scroll-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #000000;
+}
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--main-color);
+    box-shadow: 0 4px 16px hsla(255, 90%, 8%, .15);
+    color: var(--bg-color);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    z-index: 100;
+    transition: bottom .4s, transform .4s;
+    border-radius: 5px;
+}
+
+.scrollup:hover{
+    transform: translateY(-.5rem);
+}
+
+.show-scroll{
+    bottom: 3rem;
+}
+
+/* small device */
+@media all and (min-width: 310px) and (max-width: 539.9px) {
+    .hero{
+        width: auto;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 50px ;
+    }
+
+    .hero-text{
+        padding: 2px;
+    }
+
+    .hero-text h1{
+        font-size: 1.5rem;
+    }
+
+    .hero-text h6{
+        font-size: .75rem;
+    }
+
+    .hero .hero-img .hero_profile{
+        display: none;
+    }
+
+    .education{
+        margin-bottom: -50px;
+    }
+
+    .education h1{
+        font-size: 1.5rem;
+    }
+
+    .edu_card{
+        padding: 20px;
+        height: auto;
+        width: auto;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .edu_img{
+        display: none;
+    }
+
+    span{
+        font-size: 1rem;
+    }
+
+    .edu_info{
+        font-size: .75rem;
+    }
+
+    
+    .projects h1{
+        font-size: 1.5rem;
+    }
+
+    .projects_wrapper{
+        height: auto;
+        width: 300px;
+        display: grid;
+    }
+
+    .projects_img1{
+        width: 300px;
+        height: 169px;
+        vertical-align: middle;
+    }
+
+    .projects_img1 img{
+        width: 300px;
+        height: 169px;
+        object-fit: cover;
+    }
+
+    .projects_img2{
+        width: 300px;
+        height: 169px;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+
+    .projects_img2 img{
+        width: 300px;
+        height: 169px;
+        object-fit: cover;
+    }
+
+    .projects_info{
+        padding: 20px;
+    }
+
+    .projects_info h1{
+        font-size: 1rem;
+    }
+
+    .projects_info p{
+        font-size: .75rem;
+    }
+
+    .certi{
+        padding-top: 18px;
+    }
+
+    .certi h1{
+        font-size: 1.5rem;
+    }
+
+    .certi_card{
+        width: 300px;
+        text-align: center;
+    }
+
+    .certi_img{
+        width: 250px;
+        height: auto;
+    }
+
+    .certi_card h6{
+        font-size: .75rem;
+    }
+
+    footer p{
+        font-size: .75rem;
+    }
+}
+
+/* medium device */
+@media all and (min-width: 540px) and (max-width: 814.9px) {
+    .hero{
+        width: auto;
+        max-width: 410px;
+        height: auto;
+    }
+
+    .hero-text{
+        padding: 2px;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .hero-text h6{
+        font-size: 1rem;
+    }
+
+    .hero .hero-img .hero_profile{
+        display: none;
+    }
+
+    .education{
+        margin-bottom: 45px;
+    }
+
+    .education h1{
+        font-size: 2rem;
+    }
+
+    .edu_card{
+        height: auto;
+        width: auto;
+        max-width: 510px;
+        text-align: center;
+    }
+
+    span{
+        font-size: 1.25rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu_img{
+        display: flex;
+        width: 510px;
+        height: auto;
+    }
+
+    .edu_info{
+        font-size: 1rem;
+    }
+
+
+    .projects h1{
+        font-size: 2rem;
+    }
+
+    .projects_wrapper{
+        height: auto;
+        width: auto;
+        max-width: 600px;
+        display: flex;
+    }
+
+    .projects_img1{
+        width: 230px;
+        height: 169px;
+        vertical-align: middle;
+    }
+
+    .projects_img1 img{
+        width: 230px;
+        height: 169px;
+        object-fit: cover;
+    }
+
+    .projects_img2{
+        width: 230px;
+        height: 169px;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+
+    .projects_img2 img{
+        width: 230px;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .projects_info{
+        padding: 20px;
+    }
+
+    .projects_info h1{
+        font-size: 1.25rem;
+    }
+
+    .projects_info p{
+        object-fit: cover;
+        font-size: .75rem;
+    }
+
+    .certi h1{
+        font-size: 2rem;
+    }
+
+    .certi_card{
+        width: 500px;
+        text-align: center;
+    }
+
+    .certi_img{
+        width: 300px;
+        height: auto;
+    }
+
+    .certi_card h6{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 815px) and (max-width: 1099.9px){
+    .hero{
+        width: auto;
+        max-width: 700px;
+        height: auto;
+        display: flex;
+    }
+
+    .hero .hero-img .hero_profile{
+        width: auto;
+        height: 350px;
+    }
+
+    .hero-text{
+        padding: 2px;
+    }
+
+    .hero-text h1{
+        font-size: 2.4rem;
+    }
+
+    .hero-text h6{
+        font-size: 1rem;
+    }
+
+    .education h1{
+        font-size: 2.25rem;
+    }
+
+    .edu_card{
+        height: auto;
+        width: auto;
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .edu_img{
+        display: flex;
+        width: 650px;
+        height: auto;
+    }
+
+    span{
+        font-size: 1.5rem;
+    }
+
+    .edu_info{
+        font-size: 1rem;
+    }
+
+    .projects h1{
+        font-size: 2.25rem;
+    }
+
+    .projects_wrapper{
+        height: auto;
+        width: 750px;
+        display: flex;
+    }
+
+    .projects_img1{
+        width: 300px;
+        height: 169px;
+        vertical-align: middle;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .projects_img1 img{
+        width: 300px;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .projects_img2{
+        width: 300px;
+        height: 169px;
+        object-fit: cover;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+
+    .projects_img2 img{
+        width: 300px;
+        height: 169px;
+        object-fit: cover;
+    }
+
+    .projects_info{
+        padding: 20px;
+    }
+
+    .projects_info h1{
+        font-size: 1.5rem;
+    }
+
+    .projects_info p{
+        font-size: 1rem;
+    }
+
+    .certi h1{
+        font-size: 2.25rem;
+    }
+
+    .certi_card{
+        width: 500px;
+        text-align: center;
+    }
+
+    .certi_img{
+        width: 400px;
+        height: auto;
+    }
+
+    .certi_card h6{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
